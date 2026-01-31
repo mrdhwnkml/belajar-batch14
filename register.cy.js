@@ -1,5 +1,5 @@
 describe('register Test Suite', () => {
-    it.only('should successfully register with valid credentials MAIN', () => {
+    it.only('should successfully register with valid credentials MAIN KONFLIK', () => {
         cy.visit('https://example.com/register');
         cy.get('#username').type('newUser');
         cy.get('#email').type('newUser@example.com');
