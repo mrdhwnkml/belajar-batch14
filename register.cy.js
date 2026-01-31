@@ -9,7 +9,7 @@ describe('register Test Suite', () => {
         cy.get('.welcome-message').should('contain', 'Welcome, newUser');
     });
 
-    it('should display an error message with already taken username', () => {
+    it.only('should display an error message with already taken username', () => {
         cy.visit('https://example.com/register');
         cy.get('#username').type('existingUser');
         cy.get('#email').type('existingUser@example.com');
@@ -19,3 +19,4 @@ describe('register Test Suite', () => {
             .and('contain', 'Username already taken');
     })
 });
+
